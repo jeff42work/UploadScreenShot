@@ -1,0 +1,14 @@
+// If you want to override variables do it here
+//@import "variables";
+
+// Import styles
+@import "~@coreui/coreui/scss/coreui";
+
+// If you want to add something do it here
+//@import "custom";
+
+* {
+  letter-spacing: 1.55px;
+  font-family: "Helvetica", "Arial", "LiHei Pro", "黑體-繁", "微軟正黑體", sans-serif;
+}
+
