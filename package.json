@@ -1,6 +1,6 @@
 {
   "name": "uploadscreenshotcomponent",
-  "version": "0.1.5",
+  "version": "0.1.8",
   "main": "dist/UploadScreenShot.common.js",
   "private": false,
   "author": "Jeff <jeff42work@gmail.com>",

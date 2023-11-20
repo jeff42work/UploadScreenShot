@@ -9,7 +9,7 @@
     </CRow>
 
     <UploadScreenshotModal :showUploadScreenshot.sync="isModalVisible"
-                           @upload="(value1, value2) => uploadScreenShot(value1, value2)"/>
+                           @upload="(fileBlob) => uploadScreenShot(fileBlob)"/>
 
 
   </div>
@@ -33,8 +33,8 @@ export default {
     }
   },
   methods: {
-    uploadScreenShot(file, message){
-      console.log("message:{}", message);
+    uploadScreenShot(fileBlob){
+      console.log("Receive file Blob, Prepare to upload file");
     },
   }
 }

@@ -1,24 +1,29 @@
 # uploadscreenshotcomponent
 
-## Project setup
+## Installation
+To install the upload-screenshot-component into an existing project, use the npm CLI
 ```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
+npm install uploadscreenshotcomponent
 ```
 
-### Compiles and minifies for production
+After installation, you can import the component into your project.
 ```
-npm run build
+import UploadScreenshotModal from 'uploadscreenshotcomponent';
+
+Vue.use(UploadScreenshotModal);
+```
+and implement function to receive upload event
+ 
+```
+<UploadScreenshotModal :showUploadScreenshot.sync="uploadModalVisible"
+                       @upload="(value1) => uploadScreenShot(value1)"/>
 ```
 
-### Lints and fixes files
-```
-npm run lint
-```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Goals
+The primary goal of this library is to provide reusable dialogs for uploading screenshots to the server.
+it will grab the screenshot file blob and emit to upload function. you will need to implement the upload function in your project. 
+
+
+### Demo Page
+See [Demo Page](https://jeff42work.github.io/UploadScreenShot/).

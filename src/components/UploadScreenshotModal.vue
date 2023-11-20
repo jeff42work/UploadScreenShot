@@ -130,7 +130,7 @@ export default {
         this.showErrModal("請使用 ctrl + v 貼上圖檔後，再執行上傳動作");
         return;
       }
-      this.$emit('upload', this.fileBlob, 'test');
+      this.$emit('upload', this.fileBlob);
     },
 
     clearPast() {
